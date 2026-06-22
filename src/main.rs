@@ -440,9 +440,6 @@ impl AppState {
             DEFAULT_CYCLE_HOTKEY,
             "language cycle",
         );
-        self.settings.capture_hotkey = self.capture_hotkey.display.clone();
-        self.settings.cycle_hotkey = self.cycle_hotkey.display.clone();
-        self.settings.save();
     }
 
     fn register_hotkey_or_default(
