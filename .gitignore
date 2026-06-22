@@ -1,0 +1,8 @@
+/target/
+/.vs/
+*.user
+*.suo
+*.log
+*.tmp
+artifacts/
+*.bundle
