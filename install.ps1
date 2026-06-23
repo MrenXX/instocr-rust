@@ -49,6 +49,8 @@ Stop-InstalledInstOCR
 Copy-Item -LiteralPath $residentSource -Destination $residentTarget -Force
 Copy-Item -LiteralPath $cliSource -Destination $cliTarget -Force
 
+Unblock-File -Path $residentTarget, $cliTarget
+
 Copy-Item -LiteralPath (Join-Path $root 'configure-hotkeys.ps1') -Destination (Join-Path $installDir 'configure-hotkeys.ps1') -Force
 Copy-Item -LiteralPath (Join-Path $root 'Configure Hotkeys.cmd') -Destination (Join-Path $installDir 'Configure Hotkeys.cmd') -Force
 
