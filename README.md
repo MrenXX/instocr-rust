@@ -2,7 +2,11 @@
 
 InstOCR is a lightweight Windows tray tool for instant OCR screen capture. Press a hotkey, drag around text, and the recognized text is copied to your clipboard.
 
-The Rust version is now the production version. In manual Task Manager profiling, the earlier C# WPF build was around **140 MiB after first use**, while this Rust resident app peaked around **5.5 MiB** on the user's machine: more than **10x lower observed memory** for the workflow that matters here.
+The Rust version is now the production version: as a resident tray app it stays extremely lightweight, idling at roughly **5 MiB of RAM** — an order of magnitude lighter than the earlier C# WPF build (~140 MiB).
+
+## Build from source
+
+See [`BUILD.md`](BUILD.md).
 
 ## Install for normal users
 
